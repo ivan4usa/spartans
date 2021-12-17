@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-md w-100 navbar-dark p-0">
+	<a class="navbar-brand mx-5 d-md-none d-lg-block" href="index.html">Spartans FC</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbars">
+		<ul class="navbar-nav w-100 justify-content-between text-uppercase">
+			<li class="nav-item text-warning">
+				<a class="nav-link text-warning text-center mx-3" href="index.html" aria-label="Go to the homepage">
+					<i class="fas fa-dumbbell"></i> Home
+				</a>
+			</li>
+
+			<li class="nav-item color-white">
+				<a class="nav-link text-warning text-center mx-3" href="about.html" aria-label="Read more about us">
+					<i class="fas fa-dumbbell"></i> About Us
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link text-warning text-center mx-3" href="classes.html" aria-label="Read more about our classes">
+					<i class="fas fa-dumbbell"></i> Classes
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link text-warning text-center mx-3" href="join.html" aria-label="Join Us">
+					<i class="fas fa-dumbbell"></i> Join Us
+				</a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#" class="nav-link text-warning text-center mx-3" data-toggle="modal" data-target="#loginModal" aria-label="Go to Login Page">
+					<i class="fas fa-dumbbell"></i> My Account
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content my-modal">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning text-center" id="modalTitle">Login To Account</h5>
+        <button type="button" class="close my-modal_close-btn" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form class="container-fluid" action="https://www.w3schools.com/action_page.php" method="get">
+        	<div class="form-group row mt-3">
+				<label class="col-5 text-warning" for="login">Login: </label>
+        		<input class="col-7 form-control" type="text" id="login" name="login" required>
+        	</div>
+
+			<div class="form-group row">
+				<label class="col-5 text-warning" for="password">Password: </label>
+        		<input class="col-7 form-control" type="password" id="password" name="password" required>
+        	</div>
+
+			<div class="form-group row mt-4 mb-0">
+				<div class="col text-center">
+					<input class="btn btn-warning px-4 my-3" type="submit" value="Login">
+				</div>
+
+				<div class="col text-center">
+					<input class="btn btn-outline-light px-4 my-3" type="button" data-dismiss="modal" aria-label="Close" value="Cancel">
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<a class="btn btn-link" href="#">Or Register</a>
+			</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
